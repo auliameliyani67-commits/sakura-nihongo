@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Nihongo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌸 Sakura Nihongo</h1>
+    <p>Belajar Bahasa Jepang untuk Pemula</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">Beranda</button>
+    <button onclick="showPage('hiragana')">Hiragana</button>
+    <button onclick="showPage('katakana')">Katakana</button>
+    <button onclick="showPage('kosakata')">Kosakata</button>
+    <button onclick="showPage('kuis')">Kuis</button>
+</nav>
+
+<main>
+
+    <section id="home" class="page active">
+        <h2>Selamat Datang!</h2>
+        <p>Selamat belajar bahasa Jepang bersama Sakura Nihongo.</p>
+        <div class="welcome">
+            <h1>こんにちは</h1>
+            <p>Konnichiwa = Halo</p>
+        </div>
+    </section>
+
+    <section id="hiragana" class="page">
+        <h2>Belajar Hiragana</h2>
+        <div id="hiraganaList" class="grid"></div>
+    </section>
+
+    <section id="katakana" class="page">
+        <h2>Belajar Katakana</h2>
+        <div id="katakanaList" class="grid"></div>
+    </section>
+
+    <section id="kosakata" class="page">
+        <h2>Kosakata Bahasa Jepang</h2>
+        <div id="vocabularyList" class="grid"></div>
+    </section>
+
+    <section id="kuis" class="page">
+        <h2>Kuis Bahasa Jepang</h2>
+        <p id="question">Tekan tombol mulai untuk bermain!</p>
+        <div id="answers"></div>
+        <p id="result"></p>
+        <h3>Skor: <span id="score">0</span></h3>
+        <button class="start" onclick="startQuiz()">Mulai Kuis</button>
+    </section>
+
+</main>
+
+<footer>
+    <p>🌸 Sakura Nihongo © 2026</p>
+    <p>がんばって！ (Ganbatte!)</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
